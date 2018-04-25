@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_DataBUSDisplay_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_Reset_InHigh",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

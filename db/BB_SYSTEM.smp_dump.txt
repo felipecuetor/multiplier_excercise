@@ -1,0 +1,18 @@
+
+State Machine - |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register
+Name State_Register.State_END_0 State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_2 State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_1 State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_0 State_Register.State_DEC_RegGEN2_2 State_Register.State_DEC_RegGEN2_1 State_Register.State_DEC_RegGEN2_0 State_Register.State_MOV_RegGEN3_RegFIX0_2 State_Register.State_MOV_RegGEN3_RegFIX0_1 State_Register.State_MOV_RegGEN3_RegFIX0_0 State_Register.State_MOV_RegGEN2_RegFIX1_2 State_Register.State_MOV_RegGEN2_RegFIX1_1 State_Register.State_MOV_RegGEN2_RegFIX1_0 State_Register.State_START_0 State_Register.State_RESET_0 
+State_Register.State_RESET_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State_Register.State_START_0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State_Register.State_MOV_RegGEN2_RegFIX1_0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State_Register.State_MOV_RegGEN2_RegFIX1_1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State_Register.State_MOV_RegGEN2_RegFIX1_2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State_Register.State_MOV_RegGEN3_RegFIX0_0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State_Register.State_MOV_RegGEN3_RegFIX0_1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State_Register.State_MOV_RegGEN3_RegFIX0_2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State_Register.State_DEC_RegGEN2_0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State_Register.State_DEC_RegGEN2_1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State_Register.State_DEC_RegGEN2_2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State_Register.State_END_0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
