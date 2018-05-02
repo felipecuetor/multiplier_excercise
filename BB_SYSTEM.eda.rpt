@@ -1,6 +1,6 @@
 EDA Netlist Writer report for BB_SYSTEM
-Tue Feb 27 07:39:22 2018
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Wed May 02 12:58:06 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -25,19 +25,18 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Feb 27 07:39:22 2018 ;
+; EDA Netlist Writer Status ; Successful - Wed May 02 12:58:06 2018 ;
 ; Revision Name             ; BB_SYSTEM                             ;
 ; Top-level Entity Name     ; BB_SYSTEM                             ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +66,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                     ;
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                ;
-+--------------------------------------------------------------------------------------------------------------------------------+
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM_6_1200mv_85c_slow.vo     ;
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM_6_1200mv_0c_slow.vo      ;
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM_min_1200mv_0c_fast.vo    ;
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM.vo                       ;
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM_6_1200mv_85c_v_slow.sdo  ;
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM_6_1200mv_0c_v_slow.sdo   ;
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM_min_1200mv_0c_v_fast.sdo ;
-; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/BB_SYSTEM_v.sdo                    ;
-+--------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                      ;
++-------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                 ;
++-------------------------------------------------------------------------------------------------+
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM_6_1200mv_85c_slow.vo     ;
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM_6_1200mv_0c_slow.vo      ;
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM_min_1200mv_0c_fast.vo    ;
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM.vo                       ;
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM_6_1200mv_85c_v_slow.sdo  ;
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM_6_1200mv_0c_v_slow.sdo   ;
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/BB_SYSTEM_v.sdo                    ;
++-------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,21 +87,21 @@ agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Feb 27 07:39:22 2018
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed May 02 12:58:04 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
-Info (204019): Generated file BB_SYSTEM_6_1200mv_85c_slow.vo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file BB_SYSTEM_6_1200mv_0c_slow.vo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file BB_SYSTEM_min_1200mv_0c_fast.vo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file BB_SYSTEM.vo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file BB_SYSTEM_6_1200mv_85c_v_slow.sdo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file BB_SYSTEM_6_1200mv_0c_v_slow.sdo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file BB_SYSTEM_min_1200mv_0c_v_fast.sdo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file BB_SYSTEM_v.sdo in folder "/media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM_6_1200mv_85c_slow.vo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM_6_1200mv_0c_slow.vo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM_min_1200mv_0c_fast.vo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM.vo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM_6_1200mv_85c_v_slow.sdo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM_6_1200mv_0c_v_slow.sdo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM_min_1200mv_0c_v_fast.sdo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BB_SYSTEM_v.sdo in folder "C:/Users/Felipe/git/multiplier_excercise/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1048 megabytes
-    Info: Processing ended: Tue Feb 27 07:39:22 2018
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 563 megabytes
+    Info: Processing ended: Wed May 02 12:58:06 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

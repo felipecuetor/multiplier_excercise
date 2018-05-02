@@ -1,6 +1,6 @@
 Analysis & Synthesis report for BB_SYSTEM
-Tue Feb 27 07:39:11 2018
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Wed May 02 12:57:27 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -15,26 +15,27 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM
- 13. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0
- 14. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0
- 15. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u0
- 16. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u1
- 17. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u2
- 18. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3
- 19. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0
- 20. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1
- 21. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0
- 22. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_DECODER:CC_DECODER_u0
- 23. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u0
- 24. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u1
- 25. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0
- 26. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM
+ 14. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0
+ 15. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0
+ 16. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u0
+ 17. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u1
+ 18. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u2
+ 19. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3
+ 20. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0
+ 21. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1
+ 22. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0
+ 23. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_DECODER:CC_DECODER_u0
+ 24. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u0
+ 25. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u1
+ 26. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0
+ 27. Parameter Settings for User Entity Instance: WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -49,27 +50,26 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 27 07:39:11 2018       ;
-; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed May 02 12:57:27 2018       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 85                                          ;
-;     Total combinational functions  ; 58                                          ;
-;     Dedicated logic registers      ; 39                                          ;
-; Total registers                    ; 39                                          ;
+; Total logic elements               ; 9                                           ;
+;     Total combinational functions  ; 2                                           ;
+;     Dedicated logic registers      ; 9                                           ;
+; Total registers                    ; 9                                           ;
 ; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -93,7 +93,7 @@ agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -146,7 +146,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -182,22 +182,22 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                  ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------+---------+
-; rtl/uDataPath.v                  ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v       ;         ;
-; rtl/SC_STATEMACHINE.v            ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_STATEMACHINE.v ;         ;
-; rtl/SC_RegSHIFTER.v              ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_RegSHIFTER.v   ;         ;
-; rtl/SC_RegGENERAL.v              ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_RegGENERAL.v   ;         ;
-; rtl/SC_RegFIXED.v                ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_RegFIXED.v     ;         ;
-; rtl/CC_MUXX.v                    ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_MUXX.v         ;         ;
-; rtl/CC_DECODER.v                 ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_DECODER.v      ;         ;
-; rtl/CC_ALU.v                     ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_ALU.v          ;         ;
-; BB_SYSTEM.v                      ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/BB_SYSTEM.v           ;         ;
-; rtl/WB_SYSTEM.v                  ; yes             ; User Verilog HDL File  ; /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/WB_SYSTEM.v       ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; rtl/uDataPath.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v       ;         ;
+; rtl/SC_STATEMACHINE.v            ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/SC_STATEMACHINE.v ;         ;
+; rtl/SC_RegSHIFTER.v              ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/SC_RegSHIFTER.v   ;         ;
+; rtl/SC_RegGENERAL.v              ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/SC_RegGENERAL.v   ;         ;
+; rtl/SC_RegFIXED.v                ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/SC_RegFIXED.v     ;         ;
+; rtl/CC_MUXX.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/CC_MUXX.v         ;         ;
+; rtl/CC_DECODER.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/CC_DECODER.v      ;         ;
+; rtl/CC_ALU.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/CC_ALU.v          ;         ;
+; BB_SYSTEM.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v           ;         ;
+; rtl/WB_SYSTEM.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Felipe/git/multiplier_excercise/rtl/WB_SYSTEM.v       ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------+
@@ -205,20 +205,20 @@ agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 85                       ;
+; Estimated Total logic elements              ; 9                        ;
 ;                                             ;                          ;
-; Total combinational functions               ; 58                       ;
+; Total combinational functions               ; 2                        ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 27                       ;
-;     -- 3 input functions                    ; 17                       ;
-;     -- <=2 input functions                  ; 14                       ;
+;     -- 4 input functions                    ; 0                        ;
+;     -- 3 input functions                    ; 0                        ;
+;     -- <=2 input functions                  ; 2                        ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 44                       ;
-;     -- arithmetic mode                      ; 14                       ;
+;     -- normal mode                          ; 2                        ;
+;     -- arithmetic mode                      ; 0                        ;
 ;                                             ;                          ;
-; Total registers                             ; 39                       ;
-;     -- Dedicated logic registers            ; 39                       ;
+; Total registers                             ; 9                        ;
+;     -- Dedicated logic registers            ; 9                        ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 10                       ;
@@ -226,9 +226,9 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; BB_SYSTEM_CLOCK_50~input ;
-; Maximum fan-out                             ; 39                       ;
-; Total fan-out                               ; 343                      ;
-; Average fan-out                             ; 2.93                     ;
+; Maximum fan-out                             ; 9                        ;
+; Total fan-out                               ; 43                       ;
+; Average fan-out                             ; 1.39                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -237,73 +237,95 @@ agreement for further details.
 +--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name     ; Library Name ;
 +--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+-----------------+--------------+
-; |BB_SYSTEM                                 ; 58 (0)              ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |BB_SYSTEM                                                                              ; BB_SYSTEM       ; work         ;
-;    |WB_SYSTEM:WB_SYSTEM_u0|                ; 58 (0)              ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0                                                       ; WB_SYSTEM       ; work         ;
-;       |SC_STATEMACHINE:SC_STATEMACHINE_u0| ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0                    ; SC_STATEMACHINE ; work         ;
-;       |uDataPath:uDataPath_u0|             ; 41 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0                                ; uDataPath       ; work         ;
-;          |CC_ALU:CC_ALU_u0|                ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0               ; CC_ALU          ; work         ;
-;          |CC_DECODER:CC_DECODER_u0|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_DECODER:CC_DECODER_u0       ; CC_DECODER      ; work         ;
-;          |CC_MUXX:CC_MUXX_u0|              ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u0             ; CC_MUXX         ; work         ;
-;          |SC_RegGENERAL:SC_RegGENERAL_u2|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u2 ; SC_RegGENERAL   ; work         ;
-;          |SC_RegGENERAL:SC_RegGENERAL_u3|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3 ; SC_RegGENERAL   ; work         ;
-;          |SC_RegSHIFTER:SC_RegSHIFTER_u0|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0 ; SC_RegSHIFTER   ; work         ;
+; |BB_SYSTEM                                 ; 2 (0)               ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |BB_SYSTEM                                                                              ; BB_SYSTEM       ; work         ;
+;    |WB_SYSTEM:WB_SYSTEM_u0|                ; 2 (0)               ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0                                                       ; WB_SYSTEM       ; work         ;
+;       |SC_STATEMACHINE:SC_STATEMACHINE_u0| ; 1 (1)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0                    ; SC_STATEMACHINE ; work         ;
+;       |uDataPath:uDataPath_u0|             ; 1 (0)               ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0                                ; uDataPath       ; work         ;
+;          |SC_RegGENERAL:SC_RegGENERAL_u3|  ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3 ; SC_RegGENERAL   ; work         ;
+;          |SC_RegSHIFTER:SC_RegSHIFTER_u0|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0 ; SC_RegSHIFTER   ; work         ;
 +--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-+----------------------------------------------------+----------------------------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+------------------------------+------------------------------+
-; Name                                               ; State_Register.State_END_0 ; State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_2 ; State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_1 ; State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_0 ; State_Register.State_DEC_RegGEN2_2 ; State_Register.State_DEC_RegGEN2_1 ; State_Register.State_DEC_RegGEN2_0 ; State_Register.State_MOV_RegGEN3_RegFIX0_2 ; State_Register.State_MOV_RegGEN3_RegFIX0_1 ; State_Register.State_MOV_RegGEN3_RegFIX0_0 ; State_Register.State_MOV_RegGEN2_RegFIX1_2 ; State_Register.State_MOV_RegGEN2_RegFIX1_1 ; State_Register.State_MOV_RegGEN2_RegFIX1_0 ; State_Register.State_START_0 ; State_Register.State_RESET_0 ;
-+----------------------------------------------------+----------------------------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+------------------------------+------------------------------+
-; State_Register.State_RESET_0                       ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 0                            ;
-; State_Register.State_START_0                       ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                            ; 1                            ;
-; State_Register.State_MOV_RegGEN2_RegFIX1_0         ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                            ; 1                            ;
-; State_Register.State_MOV_RegGEN2_RegFIX1_1         ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_MOV_RegGEN2_RegFIX1_2         ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_MOV_RegGEN3_RegFIX0_0         ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_MOV_RegGEN3_RegFIX0_1         ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_MOV_RegGEN3_RegFIX0_2         ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_DEC_RegGEN2_0                 ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 1                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_DEC_RegGEN2_1                 ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 1                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_DEC_RegGEN2_2                 ; 0                          ; 0                                                  ; 0                                                  ; 0                                                  ; 1                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_0 ; 0                          ; 0                                                  ; 0                                                  ; 1                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_1 ; 0                          ; 0                                                  ; 1                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_ADD_RegGEN3_RegGEN3_RegFIX0_2 ; 0                          ; 1                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-; State_Register.State_END_0                         ; 1                          ; 0                                                  ; 0                                                  ; 0                                                  ; 0                                  ; 0                                  ; 0                                  ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
-+----------------------------------------------------+----------------------------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+------------------------------+------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++--------------------------------------------+----------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+------------------------------+------------------------------+
+; Name                                       ; State_Register.State_END_0 ; State_Register.State_ABS_RegGEN3_RegFIX0_8 ; State_Register.State_ABS_RegGEN3_RegFIX0_7 ; State_Register.State_ABS_RegGEN3_RegFIX0_6 ; State_Register.State_ABS_RegGEN3_RegFIX0_5 ; State_Register.State_ABS_RegGEN3_RegFIX0_4 ; State_Register.State_ABS_RegGEN3_RegFIX0_3 ; State_Register.State_ABS_RegGEN3_RegFIX0_2 ; State_Register.State_ABS_RegGEN3_RegFIX0_1 ; State_Register.State_ABS_RegGEN3_RegFIX0_0 ; State_Register.State_START_0 ; State_Register.State_RESET_0 ;
++--------------------------------------------+----------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+------------------------------+------------------------------+
+; State_Register.State_RESET_0               ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 0                            ;
+; State_Register.State_START_0               ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_0 ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_1 ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_2 ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_3 ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_4 ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_5 ; 0                          ; 0                                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_6 ; 0                          ; 0                                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_7 ; 0                          ; 0                                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_ABS_RegGEN3_RegFIX0_8 ; 0                          ; 1                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
+; State_Register.State_END_0                 ; 1                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                                          ; 0                            ; 1                            ;
++--------------------------------------------+----------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+------------------------------+------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                 ;
-+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
-; Register name                                                                                          ; Reason for Removal                                                                                        ;
-+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[0..7] ; Stuck at GND due to stuck port clock_enable                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u0|RegGENERAL_Register[0..7] ; Stuck at GND due to stuck port clock_enable                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[1]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[0]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[2,3]        ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[3]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[5]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[6]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[4]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[1,4,5,7]    ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[6]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[2]          ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7] ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0]          ; Stuck at VCC due to stuck port data_in                                                                    ;
-; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]          ; Stuck at GND due to stuck port data_in                                                                    ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~4                             ; Lost fanout                                                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~5                             ; Lost fanout                                                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~6                             ; Lost fanout                                                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~7                             ; Lost fanout                                                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~8                             ; Lost fanout                                                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~9                             ; Lost fanout                                                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~10                            ; Lost fanout                                                                                               ;
-; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~11                            ; Lost fanout                                                                                               ;
-; Total Number of Removed Registers = 40                                                                 ;                                                                                                           ;
-+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                           ;
++------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                              ; Reason for Removal                                                                                              ;
++------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[0..7]     ; Stuck at GND due to stuck port clock_enable                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[0..7]     ; Stuck at GND due to stuck port clock_enable                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u0|RegGENERAL_Register[0..7]     ; Stuck at GND due to stuck port clock_enable                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[1]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[0]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[2,3]            ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[3]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[5]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[6]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[4]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[1,4,5,7]        ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[6]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0|RegFIXED_Register[2]              ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]       ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[0]              ; Stuck at VCC due to stuck port data_in                                                                          ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1|RegFIXED_Register[7]              ; Stuck at GND due to stuck port data_in                                                                          ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[7]        ; Stuck at GND due to stuck port data_in                                                                          ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[7]        ; Stuck at GND due to stuck port data_in                                                                          ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[3]        ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[0] ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[2,4..6]   ; Merged with WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[1] ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register.State_ABS_RegGEN3_RegFIX0_1       ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register.State_ABS_RegGEN3_RegFIX0_2       ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register.State_ABS_RegGEN3_RegFIX0_3       ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register.State_ABS_RegGEN3_RegFIX0_4       ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register.State_ABS_RegGEN3_RegFIX0_5       ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~4                                 ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~5                                 ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~6                                 ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~7                                 ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~8                                 ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~9                                 ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~10                                ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~11                                ; Lost fanout                                                                                                     ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[1]        ; Stuck at GND due to stuck port data_in                                                                          ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[1,2,4..6] ; Stuck at GND due to stuck port data_in                                                                          ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register.State_END_0                       ; Lost fanout                                                                                                     ;
+; Total Number of Removed Registers = 67                                                                     ;                                                                                                                 ;
++------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------------------------+--------------------------------+------------------------------------------------------------------------------------------------------+
+; Register name                                                                                       ; Reason for Removal             ; Registers Removed due to This Register                                                               ;
++-----------------------------------------------------------------------------------------------------+--------------------------------+------------------------------------------------------------------------------------------------------+
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[1] ; Stuck at GND                   ; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[1], ;
+;                                                                                                     ; due to stuck port data_in      ; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[2], ;
+;                                                                                                     ;                                ; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[4], ;
+;                                                                                                     ;                                ; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[5], ;
+;                                                                                                     ;                                ; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[6]  ;
+; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[0] ; Stuck at GND                   ; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[7], ;
+;                                                                                                     ; due to stuck port clock_enable ; WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[7]  ;
+; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register~4                          ; Lost Fanouts                   ; WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0|State_Register.State_END_0                 ;
++-----------------------------------------------------------------------------------------------------+--------------------------------+------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -311,26 +333,25 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 39    ;
+; Total registers                              ; 9     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 39    ;
+; Number of registers using Asynchronous Clear ; 9     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0|Mux1   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u0|Mux1 ;
-; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0|Add0   ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0|Mux4   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
+; 6:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[3] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u0|Mux7                               ;
+; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |BB_SYSTEM|WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0|Add2                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -520,21 +541,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 39                          ;
-;     CLR               ; 15                          ;
-;     ENA CLR           ; 24                          ;
-; cycloneiii_lcell_comb ; 58                          ;
-;     arith             ; 14                          ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 7                           ;
-;     normal            ; 44                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 27                          ;
+; cycloneiii_ff         ; 9                           ;
+;     CLR               ; 7                           ;
+;     ENA CLR           ; 2                           ;
+; cycloneiii_lcell_comb ; 3                           ;
+;     normal            ; 3                           ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 5.48                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -543,7 +560,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -552,55 +569,63 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Feb 27 07:38:59 2018
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed May 02 12:56:59 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/uDataPath.v
-    Info (12023): Found entity 1: uDataPath File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/SC_STATEMACHINE.v
-    Info (12023): Found entity 1: SC_STATEMACHINE File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_STATEMACHINE.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/SC_RegSHIFTER.v
-    Info (12023): Found entity 1: SC_RegSHIFTER File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_RegSHIFTER.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/SC_RegGENERAL.v
-    Info (12023): Found entity 1: SC_RegGENERAL File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_RegGENERAL.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/SC_RegFIXED.v
-    Info (12023): Found entity 1: SC_RegFIXED File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/SC_RegFIXED.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/CC_MUXX.v
-    Info (12023): Found entity 1: CC_MUXX File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_MUXX.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/CC_DECODER.v
-    Info (12023): Found entity 1: CC_DECODER File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_DECODER.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/CC_ALU.v
-    Info (12023): Found entity 1: CC_ALU File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_ALU.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file BB_SYSTEM.v
-    Info (12023): Found entity 1: BB_SYSTEM File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/BB_SYSTEM.v Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/WB_SYSTEM.v
-    Info (12023): Found entity 1: WB_SYSTEM File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/WB_SYSTEM.v Line: 27
+Warning (20031): Parallel compilation is enabled for 4 processors, but there are only 2 processors in the system. Runtime may increase due to over usage of the processor space.
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/udatapath.v
+    Info (12023): Found entity 1: uDataPath File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_statemachine.v
+    Info (12023): Found entity 1: SC_STATEMACHINE File: C:/Users/Felipe/git/multiplier_excercise/rtl/SC_STATEMACHINE.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regshifter.v
+    Info (12023): Found entity 1: SC_RegSHIFTER File: C:/Users/Felipe/git/multiplier_excercise/rtl/SC_RegSHIFTER.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_reggeneral.v
+    Info (12023): Found entity 1: SC_RegGENERAL File: C:/Users/Felipe/git/multiplier_excercise/rtl/SC_RegGENERAL.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regfixed.v
+    Info (12023): Found entity 1: SC_RegFIXED File: C:/Users/Felipe/git/multiplier_excercise/rtl/SC_RegFIXED.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_muxx.v
+    Info (12023): Found entity 1: CC_MUXX File: C:/Users/Felipe/git/multiplier_excercise/rtl/CC_MUXX.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_decoder.v
+    Info (12023): Found entity 1: CC_DECODER File: C:/Users/Felipe/git/multiplier_excercise/rtl/CC_DECODER.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_alu.v
+    Info (12023): Found entity 1: CC_ALU File: C:/Users/Felipe/git/multiplier_excercise/rtl/CC_ALU.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file bb_system.v
+    Info (12023): Found entity 1: BB_SYSTEM File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/wb_system.v
+    Info (12023): Found entity 1: WB_SYSTEM File: C:/Users/Felipe/git/multiplier_excercise/rtl/WB_SYSTEM.v Line: 27
 Info (12127): Elaborating entity "BB_SYSTEM" for the top level hierarchy
-Info (12128): Elaborating entity "WB_SYSTEM" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/BB_SYSTEM.v Line: 70
-Info (12128): Elaborating entity "uDataPath" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/WB_SYSTEM.v Line: 85
-Info (12128): Elaborating entity "SC_RegGENERAL" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 110
-Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 144
-Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 150
-Info (12128): Elaborating entity "SC_RegSHIFTER" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 163
-Info (12128): Elaborating entity "CC_DECODER" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_DECODER:CC_DECODER_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 173
-Info (12128): Elaborating entity "CC_MUXX" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 192
-Info (12128): Elaborating entity "CC_ALU" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/uDataPath.v Line: 223
-Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(58): object "addition0" assigned a value but never read File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_ALU.v Line: 58
-Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(59): object "addition1" assigned a value but never read File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/CC_ALU.v Line: 59
-Info (12128): Elaborating entity "SC_STATEMACHINE" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0" File: /media/fsegura/FES-INFO/Dropbox/work/de0nano/0DATAPATH/PRJ0_uDataPath_1/rtl/WB_SYSTEM.v Line: 102
+Info (12128): Elaborating entity "WB_SYSTEM" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0" File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 70
+Info (12128): Elaborating entity "uDataPath" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/WB_SYSTEM.v Line: 85
+Info (12128): Elaborating entity "SC_RegGENERAL" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegGENERAL:SC_RegGENERAL_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 110
+Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 144
+Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegFIXED:SC_RegFIXED_u1" File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 150
+Info (12128): Elaborating entity "SC_RegSHIFTER" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|SC_RegSHIFTER:SC_RegSHIFTER_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 163
+Info (12128): Elaborating entity "CC_DECODER" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_DECODER:CC_DECODER_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 173
+Info (12128): Elaborating entity "CC_MUXX" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_MUXX:CC_MUXX_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 192
+Info (12128): Elaborating entity "CC_ALU" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|uDataPath:uDataPath_u0|CC_ALU:CC_ALU_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/uDataPath.v Line: 223
+Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(58): object "addition0" assigned a value but never read File: C:/Users/Felipe/git/multiplier_excercise/rtl/CC_ALU.v Line: 58
+Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(59): object "addition1" assigned a value but never read File: C:/Users/Felipe/git/multiplier_excercise/rtl/CC_ALU.v Line: 59
+Info (12128): Elaborating entity "SC_STATEMACHINE" for hierarchy "WB_SYSTEM:WB_SYSTEM_u0|SC_STATEMACHINE:SC_STATEMACHINE_u0" File: C:/Users/Felipe/git/multiplier_excercise/rtl/WB_SYSTEM.v Line: 102
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "BB_SYSTEM_DataBUSDisplay_Out[1]" is stuck at GND File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 55
+    Warning (13410): Pin "BB_SYSTEM_DataBUSDisplay_Out[2]" is stuck at GND File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 55
+    Warning (13410): Pin "BB_SYSTEM_DataBUSDisplay_Out[4]" is stuck at GND File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 55
+    Warning (13410): Pin "BB_SYSTEM_DataBUSDisplay_Out[5]" is stuck at GND File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 55
+    Warning (13410): Pin "BB_SYSTEM_DataBUSDisplay_Out[6]" is stuck at GND File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 55
+    Warning (13410): Pin "BB_SYSTEM_DataBUSDisplay_Out[7]" is stuck at GND File: C:/Users/Felipe/git/multiplier_excercise/BB_SYSTEM.v Line: 55
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (17049): 14 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 101 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 91 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 981 megabytes
-    Info: Processing ended: Tue Feb 27 07:39:11 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 683 megabytes
+    Info: Processing ended: Wed May 02 12:57:27 2018
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:45
 
 
