@@ -175,12 +175,84 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 		end
 
 //=========================================================
-// RegGEN2>>>
+// 	RegGEN1 = {RegGEN1[[DATAWIDTH_BUS-2:0],0]} 
 //=========================================================
+	State_SHL_RegGEN1_0 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b001;				//Selecciona RegGEN1
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//ALU como WIRE
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;						
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_SHL_RegGEN1_1 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b001;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					//Carga en RegSHIFTER
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_SHL_RegGEN1_2 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;		
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b001;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b01;	//Shift a la izquierda	
+		end
+	State_SHL_RegGEN1_3 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b001;		//Asigna a RegGEN1
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b111;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b1111;					//Espera a la siguiente operacion
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11; 
+		end
 
 //=========================================================
-// RegGEN1>>>
+//    RegGEN2 = {0,RegGEN2[[DATAWIDTH_BUS-1:1]]} 
 //=========================================================
+	State_SHR_RegGEN2_0 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				//Selecciona RegGEN2
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//ALU como WIRE
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;						
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_SHR_RegGEN2_1 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					//Carga en RegSHIFTER
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_SHR_RegGEN2_2 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;		
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b10;	//Shift a la derecha	
+		end
+	State_SHR_RegGEN2_3 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b010;		//Asigna a RegGEN2
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b111;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b1111;					//Espera a la siguiente operacion
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11; 		
+		end=================================================
 
 //=========================================================
 // D. RegGEN3 = RegGEN3 + RegGEN1;
