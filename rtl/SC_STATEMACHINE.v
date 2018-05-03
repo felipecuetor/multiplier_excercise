@@ -1,4 +1,4 @@
-//##########################################################################
+﻿//##########################################################################
 //######					G0B1T HDL EXAMPLES											####
 //######	Fredy Enrique Segura-Quijano fsegura@uniandes.edu.co				####   
 //######																						####   
@@ -49,16 +49,30 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 	localparam State_MOV_RegGEN2_RegFIX1_0					= 2;
 	localparam State_MOV_RegGEN2_RegFIX1_1					= 3;
 	localparam State_MOV_RegGEN2_RegFIX1_2					= 4;
-	localparam State_MOV_RegGEN3_RegFIX0_0					= 5;
-	localparam State_MOV_RegGEN3_RegFIX0_1					= 6;
-	localparam State_MOV_RegGEN3_RegFIX0_2					= 7;
-	localparam State_DEC_RegGEN2_0							= 8;
-	localparam State_DEC_RegGEN2_1							= 9;	
-	localparam State_DEC_RegGEN2_2							= 10;		
-	localparam State_ADD_RegGEN3_RegGEN3_RegGEN1_0		= 11;		
-	localparam State_ADD_RegGEN3_RegGEN3_RegGEN1_1		= 12;		
-	localparam State_ADD_RegGEN3_RegGEN3_RegGEN1_2		= 13;		
-	localparam State_END_0										= 14;
+	localparam State_MOV_RegGEN1_RegFIX0_0					= 5;
+	localparam State_MOV_RegGEN1_RegFIX0_1					= 6;
+	localparam State_MOV_RegGEN1_RegFIX0_2					= 7;
+	localparam State_MOV_RegGEN0_ADD1_0						= 8;
+	localparam State_MOV_RegGEN0_ADD1_1						= 9;	
+	localparam State_MOV_RegGEN0_ADD1_2						= 10;
+	
+	localparam State_CHECK_RegGEN2_0		    				= 11;
+	localparam State_CHECK_RegGEN2_1    					= 12;
+	localparam State_CHECK_RegGEN2LSB_0 					= 13;
+	localparam State_CHECK_RegGEN2LSB_1						= 14;
+	
+	localparam State_SHL_RegGEN1_0							= 15;		
+	localparam State_SHL_RegGEN1_1							= 16;		
+	localparam State_SHL_RegGEN1_2							= 17;
+	localparam State_SHL_RegGEN1_3							= 18;
+	localparam State_SHR_RegGEN2_0							= 19;
+	localparam State_SHR_RegGEN2_1							= 20;
+	localparam State_SHR_RegGEN2_2							= 21;
+	localparam State_SHR_RegGEN2_3							= 22;
+	localparam State_ADD_RegGEN3_RegGEN3_RegGEN1_0     = 23;
+	localparam State_ADD_RegGEN3_RegGEN3_RegGEN1_1     = 24;
+	localparam State_ADD_RegGEN3_RegGEN3_RegGEN1_2     = 25;
+	localparam State_END_0										= 26;
 
 
 //=======================================================
@@ -97,21 +111,41 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 		
 		State_MOV_RegGEN2_RegFIX1_0: State_Signal = State_MOV_RegGEN2_RegFIX1_1;
 		State_MOV_RegGEN2_RegFIX1_1: State_Signal = State_MOV_RegGEN2_RegFIX1_2;		
-		State_MOV_RegGEN2_RegFIX1_2: State_Signal = State_MOV_RegGEN3_RegFIX0_0;
+		State_MOV_RegGEN2_RegFIX1_2: State_Signal = State_MOV_RegGEN1_RegFIX0_0;
 		
-		State_MOV_RegGEN3_RegFIX0_0: State_Signal = State_MOV_RegGEN3_RegFIX0_1;
-		State_MOV_RegGEN3_RegFIX0_1: State_Signal = State_MOV_RegGEN3_RegFIX0_2;
-		State_MOV_RegGEN3_RegFIX0_2: State_Signal = State_DEC_RegGEN2_0;
+		State_MOV_RegGEN1_RegFIX0_0: State_Signal = State_MOV_RegGEN1_RegFIX0_1;
+		State_MOV_RegGEN1_RegFIX0_1: State_Signal = State_MOV_RegGEN1_RegFIX0_2;
+		State_MOV_RegGEN1_RegFIX0_2: State_Signal = State_MOV_RegGEN0_ADD1_0;
 		
-		State_DEC_RegGEN2_0: if (SC_STATEMACHINE_Zero_InLow == 1) State_Signal = State_DEC_RegGEN2_1;
-									else State_Signal = State_END_0;
-		State_DEC_RegGEN2_1: State_Signal = State_DEC_RegGEN2_2;
-		State_DEC_RegGEN2_2: State_Signal = State_ADD_RegGEN3_RegGEN3_RegGEN1_0;		
-		State_ADD_RegGEN3_RegGEN3_RegGEN1_0: State_Signal = State_ADD_RegGEN3_RegGEN3_RegGEN1_1;		
-		State_ADD_RegGEN3_RegGEN3_RegGEN1_1: State_Signal = State_ADD_RegGEN3_RegGEN3_RegGEN1_2;				
-		State_ADD_RegGEN3_RegGEN3_RegGEN1_2: State_Signal = State_DEC_RegGEN2_0;
+		State_MOV_RegGEN0_ADD1_0: State_Signal = State_MOV_RegGEN0_ADD1_1;
+		State_MOV_RegGEN0_ADD1_1: State_Signal = State_MOV_RegGEN0_ADD1_2;
+		State_MOV_RegGEN0_ADD1_2: State_Signal = State_CHECK_RegGEN2_0;
+		
+
+		State_CHECK_RegGEN2_0: State_Signal = State_CHECK_RegGEN2_1;
+		State_CHECK_RegGEN2_1: if(SC_STATEMACHINE_Zero_InLow == 1'b1)
+											State_Signal = State_CHECK_RegGEN2LSB_0 ;
+									  else  State_Signal = State_END_0;
+		State_CHECK_RegGEN2LSB_0: State_Signal = State_CHECK_RegGEN2LSB_1;
+		State_CHECK_RegGEN2LSB_1: if(SC_STATEMACHINE_Zero_InLow == 1'b0)
+											State_Signal = State_SHL_RegGEN1_0;
+									  else  State_Signal = State_ADD_RegGEN3_RegGEN3_RegGEN1_0;							  
+		
+		State_SHL_RegGEN1_0:  State_Signal = State_SHL_RegGEN1_1;
+		State_SHL_RegGEN1_1:  State_Signal = State_SHL_RegGEN1_2;
+		State_SHL_RegGEN1_2:  State_Signal = State_SHL_RegGEN1_3;
+		State_SHL_RegGEN1_3:  State_Signal = State_SHR_RegGEN2_0;
+		State_SHR_RegGEN2_0:  State_Signal = State_SHR_RegGEN2_1;
+		State_SHR_RegGEN2_1:  State_Signal = State_SHR_RegGEN2_2;
+		State_SHR_RegGEN2_2:  State_Signal = State_SHR_RegGEN2_3;
+		State_SHR_RegGEN2_3:  State_Signal = State_CHECK_RegGEN2_0;
+		
+		State_ADD_RegGEN3_RegGEN3_RegGEN1_0: State_Signal = State_ADD_RegGEN3_RegGEN3_RegGEN1_1;
+		State_ADD_RegGEN3_RegGEN3_RegGEN1_1: State_Signal = State_ADD_RegGEN3_RegGEN3_RegGEN1_2;
+		State_ADD_RegGEN3_RegGEN3_RegGEN1_2: State_Signal = State_SHL_RegGEN1_0;
+		
 		State_END_0: State_Signal = State_END_0;
-		
+
 		default : State_Signal = State_RESET_0;
 	endcase
 	
@@ -175,6 +209,145 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 		end
 
 //=========================================================
+// MUL: RegGEN3 = RegFIX0 * RegFIX1
+//=========================================================
+//=========================================================
+// A: 			RegGEN2 = RegFIX1;
+//=========================================================
+	State_MOV_RegGEN2_RegFIX1_0 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b101;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;						
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_MOV_RegGEN2_RegFIX1_1 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b101;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					//*
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_MOV_RegGEN2_RegFIX1_2 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b010;		//*
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b111;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b1111;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+//=========================================================
+// B: 			RegGEN1 = RegFIX0;
+//=========================================================
+	State_MOV_RegGEN1_RegFIX0_0 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b100;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;						
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_MOV_RegGEN1_RegFIX0_1 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b100;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					//*
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_MOV_RegGEN1_RegFIX0_2 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b001;		//*
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b111;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b1111;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end
+		
+	
+/////////////////////////////////////////////////////////////////
+//=========================================================
+// C: 			RegGEN0 = RegGEN0+1;
+//=========================================================
+	State_MOV_RegGEN0_ADD1_0 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b000;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b1010;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;						
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_MOV_RegGEN0_ADD1_1 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b000;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b1010;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					//*
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_MOV_RegGEN0_ADD1_2 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b000;		//*
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b111;				
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b1111;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end	
+//=========================================================
+// D. REPEAT:	CHECK if (RegGEN2 = 0); 
+//=========================================================
+	State_CHECK_RegGEN2_0:	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;						
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_CHECK_RegGEN2_1 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					//*
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end
+//=========================================================
+// E. REPEAT:	CHECK if (RegGEN2LBS = 0); 
+//=========================================================		
+	State_CHECK_RegGEN2LSB_0:	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b000;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0010;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;						
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+	State_CHECK_RegGEN2LSB_1 :	
+		begin	
+			SC_STATEMACHINE_DecoderSelectionWrite_Out = 3'b111;	
+			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				//*
+			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b000;				
+			SC_STATEMACHINE_ALUSelection_Out = 4'b0010;					//*
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					//*
+			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
+		end		
+		
+//=========================================================
 // 	RegGEN1 = {RegGEN1[[DATAWIDTH_BUS-2:0],0]} 
 //=========================================================
 	State_SHL_RegGEN1_0 :	
@@ -201,7 +374,7 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b001;				
 			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
 			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					
-			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
 			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b01;	//Shift a la izquierda	
 		end
 	State_SHL_RegGEN1_3 :	
@@ -213,7 +386,6 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
 			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11; 
 		end
-
 //=========================================================
 //    RegGEN2 = {0,RegGEN2[[DATAWIDTH_BUS-1:1]]} 
 //=========================================================
@@ -241,7 +413,7 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 			SC_STATEMACHINE_MUXSelectionBUSA_Out = 3'b010;				
 			SC_STATEMACHINE_MUXSelectionBUSB_Out = 3'b111;				
 			SC_STATEMACHINE_ALUSelection_Out = 4'b0000;					
-			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 0;					
+			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
 			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b10;	//Shift a la derecha	
 		end
 	State_SHR_RegGEN2_3 :	
@@ -252,10 +424,10 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 			SC_STATEMACHINE_ALUSelection_Out = 4'b1111;					//Espera a la siguiente operacion
 			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
 			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11; 		
-		end=================================================
+		end
 
 //=========================================================
-// D. RegGEN3 = RegGEN3 + RegGEN1;
+//  RegGEN3 = RegGEN3 + RegGEN1;
 //=========================================================
 	State_ADD_RegGEN3_RegGEN3_RegGEN1_0 :	
 		begin	
@@ -283,8 +455,7 @@ module SC_STATEMACHINE #(parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATA
 			SC_STATEMACHINE_ALUSelection_Out = 4'b1111;					
 			SC_STATEMACHINE_RegSHIFTERLoad_OutLow = 1;					
 			SC_STATEMACHINE_RegSHIFTERShiftSelection_OutLow = 2'b11;		
-		end		
-		
+		end				
 //=========================================================
 // END STATE
 //=========================================================
