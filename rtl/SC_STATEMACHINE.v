@@ -1,4 +1,33 @@
-﻿//##########################################################################
+//Ivan Felipe Salgado Gutierrez - Felipe Cueto Ramirez - Nicolas Diaz Meza - GRUPO 4
+//
+//----------------------------------------------------------------------------------------------------------------------
+//MACROALGORITMO:
+//1. Inicializacion de registros: Registros Generales en 0, Registros Fijos en valores correspondientes.
+//		RegGEN0: Verifica si RegGEN2=0 y si LSB_RegGEN2=0 o LSB_RegGEN2=1. 
+//		RegGEN1: Multiplicando.
+//		RegGEN2: Multiplicador.
+// 	RegGEN3: Acumulador. Solucion parcial de la multiplicacion.
+//
+//2. RegGEN1 = RegFIX0: Asignacion de RegGEN1 mediante funcion MOV de la ALU.
+//3. RegGEN2 = RegFIX1: Asignacion de RegGEN2 mediante funcion MOV de la ALU.
+//4. RegGEN0 = RegGEN0 + 1: Se deja constante en 1. Permite verificar LSB_RegGEN2 mediante la funcion AND y las Flags
+// de la ALU.
+//
+//5. REPEAT: Check if(RegGEN2=0): Seleccion de RegGEN2 en la ALU y funcion WIRE. Afecta los flags, pero no
+// se carga en RegSHIFTER ni afecta registros. Verificar si SC_STATEMACHINE_Zero_InLow = 0 (se activa, sigue al paso 10)
+// o SC_STATEMACHINE_Zero_InLow = 1 (diferente de 0, sigue al paso 6).
+//
+//6. Check(LSB_RegGEN2): RegGEN0 & RegGEN2. Seleccion de los registros en la ALU y funcion AND. Afecta los flags, pero
+// no carga en RegSHIFTER ni afecta registros. Verifica si SC_STATEMACHINE_Zero_InLow = 0 (LSB_RegGEN2 = 0, sigue al
+// paso 8) o SC_STATEMACHINE_Zero_InLow = 1 (LSB_RegGEN2 = 1, sigue al paso 7).
+//
+//7. RegGEN3 = RegGEN3 + RegGEN1: Suma el acumulador parcial con el multiplicando.
+//8. RegGEN1 << 1'b1: Corrimiento a la izquierda del multiplicando.
+//9. RegGEN2 >> 1'b1: Corrimiento a la derecha del multiplicador. Sigue al paso 5.
+//10. END_STATE: fin de la operacion. Respuesta en RegGEN3.    
+//----------------------------------------------------------------------------------------------------------------------
+//
+//##########################################################################
 //######					G0B1T HDL EXAMPLES											####
 //######	Fredy Enrique Segura-Quijano fsegura@uniandes.edu.co				####   
 //######																						####   
